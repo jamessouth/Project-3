@@ -9,9 +9,14 @@ li{
 	list-style: none;
 }
 
+.sub-body{
+	padding: 0 1em 0 1em;
+}
+
 header{
 	background-color: #000;
 	height: 3.88888888%;
+	margin-bottom: 2em;
 }
 a{
 	text-decoration: none;
@@ -36,19 +41,39 @@ a:active{
 	text-decoration: underline;
 }
 
-.head-h3{
+.head-title{
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
 }
 
+.div-1{
+	text-align: center;
+}
 
+.div-1 p{
+	margin-bottom: 2em;
+}
+hr{
+	background-color: black;
+	border: none;
+	
+}
 
-
-
-
-
-
+#top-line{
+	height: 4px;
+	margin-bottom: 2px;
+	
+}
+#second-line{
+	height: 2px;
+	margin-bottom: 2em;
+}
+#third-line{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	height: 2px;
+}
 
 
 
