@@ -25,25 +25,25 @@
 			
 		
 		<div>
-			<h2>Contact Information</h2>
+			<h2 class="cont">Contact Information</h2>
 			<form>
 				<label>Full Name</label><br>
-				<input type="text" placeholder="Required" required/><br>
+				<input class="boxes" type="text" placeholder="Required" required/><br>
 				
 				<label>Email Address</label><br>
-				<input type="text" placeholder="Required" required/><br>
+				<input class="boxes" type="text" placeholder="Required" required/><br>
 				
 				<label>Phone Number</label><br>
-				<input type="text"/><br>
+				<input class="boxes" type="text"/><br>
 				
 				<label>Street Address</label><br>
-				<input type="text"/><br>
+				<input class="boxes" type="text"/><br>
 				
 				<label>City</label><br>
-				<input type="text"/><br>
+				<input class="boxes" type="text"/><br>
 				
 				<label>State</label><br>
-				<input type="text" list="states"/>
+				<input class="boxes" type="text" placeholder="Choose State" list="states"/>
 				<datalist id="states">
 					<option value="Alaska">
 					<option value="Alabama">
@@ -59,7 +59,7 @@
 				<br>
 				
 				<label>Zip Code</label><br>
-				<input type="text"/><br>
+				<input class="boxes zip" type="text"/><br>
 			
 			
 			</form>
@@ -68,8 +68,30 @@
 		
 		<div>
 			<hr>
-			<h2>Newsletter</h2>
-		
+			<h2 class="news">Newsletter</h2>
+			<p class="news">Select the newsletters you would like to receive</p>
+			<form>
+				<input class="check" type="checkbox" name="newsletter" value="1"/>
+				HTML News<br>
+				<input class="check" type="checkbox" name="newsletter" value="2"/>
+				CSS News<br>
+				<input class="check" type="checkbox" name="newsletter" value="3"/>
+				Javascript News<br>
+			
+				<p class="news">Newsletter format</p>
+				<input class="radio" type="radio" name="format" value="HTML"/>
+				HTML<br>
+				<input class="radio" type="radio" name="format" value="Plain text"/>
+				Plain text<br>
+				
+				<label>Other topics you'd like to hear about</label><br>
+				<input class="other" type="text"/><br>
+			
+				<input class="button" type="submit" value="Sign Up" />
+			
+			
+			</form>
+			
 		</div>
 		
 		
