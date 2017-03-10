@@ -5,7 +5,7 @@
 	    <title>James South - Project-3</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="css/styles.css">
-	    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Trirong:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     </head>
   <body>
 	<header>
@@ -25,77 +25,119 @@
 			
 		
 		<div>
-			<h2 class="cont">Contact Information</h2>
-			<form>
-				<label>Full Name</label><br>
-				<input class="boxes" type="text" placeholder="Required" required/><br>
-				
-				<label>Email Address</label><br>
-				<input class="boxes" type="text" placeholder="Required" required/><br>
-				
-				<label>Phone Number</label><br>
-				<input class="boxes" type="text"/><br>
-				
-				<label>Street Address</label><br>
-				<input class="boxes" type="text"/><br>
-				
-				<label>City</label><br>
-				<input class="boxes" type="text"/><br>
-				
-				<label>State</label><br>
-				<input class="boxes" type="text" placeholder="Choose State" list="states"/>
-				<datalist id="states">
-					<option value="Alaska">
-					<option value="Alabama">
-					<option value="Arizona">
-					<option value="California">
-					<option value="Delaware">
-					<option value="Connecticut">
-					<option value="District of Columbia">
-					<option value="Georgia">
-					<option value="Hawaii">
-					<option value="Idaho">
-				</datalist>
-				<br>
-				
-				<label>Zip Code</label><br>
-				<input class="boxes zip" type="text"/><br>
 			
+			<form action="index.html" method="post">
+				<fieldset>
+					<legend class="cont">Contact Information</legend>
+					
+					<label for="name">Full Name</label><br>
+					<input class="boxes" id="name" type="text" name="user_full_name" placeholder="Required" required/><br>
+					
+					<label for="email">Email Address</label><br>
+					<input class="boxes" id="email" type="email" name="user_email" placeholder="Required" required/><br>
+					
+					<label for="phone">Phone Number</label><br>
+					<input class="boxes" id="phone" type="tel" name="user_phone"/><br>
+					
+					<label for="address">Street Address</label><br>
+					<input class="boxes" id="address" type="text" name="user_address"/><br>
+					
+					<label for="city">City</label><br>
+					<input class="boxes" id="city" type="text" name="user_city"/><br>
+					
+					<label for="state">State</label><br>
+					<select class="boxes" name="user_state" id="state">
+						<option value="Choose State">Choose State</option>
+						<option value="Alabama">Alabama</option>
+						<option value="Alaska">Alaska</option>
+						<option value="Arizona">Arizona</option>
+						<option value="Arkansas">Arkansas</option>
+						<option value="California">California</option>
+						<option value="Colorado">Colorado</option>
+						<option value="Connecticut">Connecticut</option>
+						<option value="Delaware">Delaware</option>
+						<option value="District of Columbia">District of Columbia</option>
+						<option value="Florida">Florida</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Hawaii">Hawaii</option>
+						<option value="Idaho">Idaho</option>
+						<option value="Illinois">Illinois</option>
+						<option value="Indiana">Indiana</option>
+						<option value="Iowa">Iowa</option>
+						<option value="Kansas">Kansas</option>
+						<option value="Kentucky">Kentucky</option>
+						<option value="Louisiana">Louisiana</option>
+						<option value="Maine">Maine</option>
+						<option value="Maryland">Maryland</option>
+						<option value="Massachusetts">Massachusetts</option>
+						<option value="Michigan">Michigan</option>
+						<option value="Minnesota">Minnesota</option>
+						<option value="Mississippi">Mississippi</option>
+						<option value="Missouri">Missouri</option>
+						<option value="Montana">Montana</option>
+						<option value="Nebraska">Nebraska</option>
+						<option value="Nevada">Nevada</option>
+						<option value="New Hampshire">New Hampshire</option>
+						<option value="New Jersey">New Jersey</option>
+						<option value="New Mexico">New Mexico</option>
+						<option value="New York">New York</option>
+						<option value="North Carolina">North Carolina</option>
+						<option value="North Dakota">North Dakota</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Oklahoma">Oklahoma</option>
+						<option value="Oregon">Oregon</option>
+						<option value="Pennsylvania">Pennsylvania</option>
+						<option value="Rhode Island">Rhode Island</option>
+						<option value="South Carolina">South Carolina</option>
+						<option value="South Dakota">South Dakota</option>
+						<option value="Tennessee">Tennessee</option>
+						<option value="Texas">Texas</option>
+						<option value="Utah">Utah</option>
+						<option value="Vermont">Vermont</option>
+						<option value="Virginia">Virginia</option>
+						<option value="Washington">Washington</option>
+						<option value="West Virginia">West Virginia</option>
+						<option value="Wisconsin">Wisconsin</option>
+						<option value="Wyoming">Wyoming</option>
+						
+					</select>
+					<br>
+					
+					<label for="zip">Zip Code</label><br>
+					<input class="boxes zip" id="zip" type="text" name="user_zip"/><br>
+			
+				</fieldset>
+				<fieldset>
+					<hr id="third-line">
+					<hr>
+				
+					<h2 class="news">Newsletter</h2>
+					<p class="news">Select the newsletters you would like to receive</p>
+				
+					<input class="check" type="checkbox" id="html" name="newsletter" value="news_html"/><label for="html">
+					HTML News</label><br>
+					<input class="check" type="checkbox" id="css" name="newsletter" value="news_css"/><label for="css">
+					CSS News</label><br>
+					<input class="check" type="checkbox" id="js" name="newsletter" value="news_js"/><label for="js">
+					Javascript News</label><br>
+				
+					<p class="news">Newsletter format</p>
+					<input class="radio" type="radio" id="format_html" name="news_format" value="HTML"/><label for="format_html">
+					HTML</label><br>
+					<input class="radio" type="radio" id="format_plain" name="news_format" value="Plain text"/><label for="format_plain">
+					Plain text</label><br>
+					
+					<label>Other topics you'd like to hear about</label><br>
+					<textarea class="other" name="user_other"></textarea><br>
+			
+			
+				</fieldset>
+				
+				<button class="button" type="submit">Sign Up</button>
 			
 			</form>
-			<hr id="third-line">
-		</div>
-		
-		<div>
-			<hr>
-			<h2 class="news">Newsletter</h2>
-			<p class="news">Select the newsletters you would like to receive</p>
-			<form>
-				<input class="check" type="checkbox" name="newsletter" value="1"/>
-				HTML News<br>
-				<input class="check" type="checkbox" name="newsletter" value="2"/>
-				CSS News<br>
-				<input class="check" type="checkbox" name="newsletter" value="3"/>
-				Javascript News<br>
-			
-				<p class="news">Newsletter format</p>
-				<input class="radio" type="radio" name="format" value="HTML"/>
-				HTML<br>
-				<input class="radio" type="radio" name="format" value="Plain text"/>
-				Plain text<br>
-				
-				<label>Other topics you'd like to hear about</label><br>
-				<input class="other" type="text"/><br>
-			
-				<input class="button" type="submit" value="Sign Up" />
-			
-			
-			</form>
 			
 		</div>
-		
-		
-		
 		
 		
 		<footer>
