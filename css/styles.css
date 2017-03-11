@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Trirong', serif;
-	color: #000;
+	color: #2D3945;
 }
 li{
 	list-style: none;
@@ -14,7 +14,7 @@ li{
 }
 
 header{
-	background-color: #000;
+	background-color: #2D3945;
 	height: 4.4em;
 	margin-bottom: 2em;
 	line-height: 4.4em;
@@ -52,8 +52,9 @@ a:active{
 	font-weight: 800;
 }
 .cont{
-	margin-bottom: 1em;
+	margin-bottom: 0.6em;
 	font-size: 1.25em;
+	font-weight: 600;
 }
 
 .div-1{
@@ -62,12 +63,15 @@ a:active{
 .div-1 h2{
 	font-size: 1.25em;
 	margin-top: -0.55em;
+	margin-bottom: 0.25em;
+	
 }
 
 .div-1 p{
-	margin-bottom: 2em;
-	line-height: 1em;
-	font-size: 1em;
+	margin-bottom: 2.5em;
+	line-height: 1.2em;
+	font-size: 0.91em;
+	color: #9DA3A8;
 }
 hr{
 	background-color: black;
@@ -77,16 +81,16 @@ hr{
 
 #top-line{
 	height: 4px;
-	margin-bottom: 2px;
+	margin-bottom: 3px;
 	
 }
 #second-line{
 	height: 2px;
-	margin-bottom: 2em;
+	margin-bottom: 1.25em;
 }
 #third-line{
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 1.15em;
+	margin-bottom: 1.37em;
 	height: 2px;
 }
 
@@ -94,48 +98,82 @@ fieldset{
 	border: none;
 }
 
-
+[for]{
+	color: grey;
+}
+input[placeholder]{
+	text-align: right;
+}
 
 
 
 .boxes,
 .other{
 	width: 100%;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	background-color: lightgrey;
-	padding: 1.25em;
+	margin-top: 0.5em;
+	margin-bottom: 0.85em;
+	background-color: #EFF0F1;
+	padding: 0.85em;
 	border-color: transparent;
 	border-radius: 5px;
 	
 }
 .boxes:focus{
-	border-color: darkblue;
+	border-color: #46698B;
 }
 .zip{
 	width: 50%;
 }
 
-.news{
-	margin-bottom: 1em;
+
+.newshead{
+	margin-bottom: 0.7em;
+	font-size: 1.2em;
 }
+.newsp{
+	margin-bottom: 0.5em;
+	line-height: 1.63em;
+	font-size: 0.95em;
+	color: grey;
+}
+.newsf{
+	margin-top: 0.8em;
+	margin-bottom: 0.3em;
+	color: grey;
+}
+
+
 .check{
-	margin-bottom: 1em;
+	margin: 0 0.6em 1.05em 0.25em;
 }
+
+/* #489EF9 */
+
 .radio{
 	margin-bottom: 1em;
 }
+#format_plain{
+	margin-bottom: 2.07em;
+}
+.oth{
+	font-size: 0.95em;
+	color: grey;
+}
 .other{
-	height: 9em;
+	height: 7.5em;
+	margin-top: 0.95em;
+	margin-bottom: 1.5em;
 	
 }
 .button{
 	width: 100%;
-	height: 3em;
-	background-color: seagreen;
+	height: 3.15em;
+	background-color: #4EBBB5;
 	border: none;
 	font-size: 1.2em;
+	font-weight: 700;
 	border-radius: 5px;
+	color: #fff;
 }
 
 
@@ -143,8 +181,9 @@ footer{
 	text-align: center;
 }
 footer p{
-	padding-top: 1em;
-	padding-bottom: 10em;
+	padding-top: 1.3em;
+	padding-bottom: 12.5em;
+	color: #9DA3A8;
 }
 
 
