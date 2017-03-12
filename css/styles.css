@@ -3,7 +3,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Trirong', serif;
-	color: #2D3945;
+	
+	/* color: grey; */
 }
 li{
 	list-style: none;
@@ -100,10 +101,24 @@ fieldset{
 
 [for]{
 	color: grey;
+	font-weight: 300;
 }
+
 input[placeholder]{
-	text-align: right;
+	/* text-align: right; */
+	font-style: italic;
+	font-weight: 200;
 }
+input:focus{
+	font-style: normal;
+	font-weight: 500;
+}
+::-webkit-input-placeholder { text-align:right; }
+input:-moz-placeholder { text-align:right; }
+
+
+
+
 
 
 
@@ -113,14 +128,31 @@ input[placeholder]{
 	margin-top: 0.5em;
 	margin-bottom: 0.85em;
 	background-color: #EFF0F1;
-	padding: 0.85em;
-	border-color: transparent;
-	border-radius: 5px;
+	padding: 0.85em 1.6em;
+	border-radius: 4px;
+	border: 2px solid transparent;
+}
+.boxes:focus,
+.other:focus{
+	border-color: #46698B;
+	outline: none;
 	
 }
-.boxes:focus{
-	border-color: #46698B;
+#state{
+	color: #ABB0B5;
+	font-weight: 300;
+	font-size: 0.95em;
+	-webkit-appearance: none;
+	margin-top: 0.35em;
+	height: 49.66px;
+	padding: 0 0 0 0.85em;
+	
+	
 }
+
+
+
+
 .zip{
 	width: 50%;
 }
@@ -144,8 +176,23 @@ input[placeholder]{
 
 
 .check{
-	margin: 0 0.6em 1.05em 0.25em;
+	/* margin: 0 0.6em 1.05em 0.25em; */
 }
+
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	border: 1px solid black;
+	width: 10px;
+	height: 10px;
+}
+input[type="checkbox"]:checked{
+	background-color: red;
+}
+
+
+
+
+
 
 /* #489EF9 */
 
