@@ -20,9 +20,7 @@ header{
 	margin-bottom: 2em;
 	line-height: 4.4em;
 }
-header h3{
-	
-}
+
 a{
 	text-decoration: none;
 	transition: all .5s;
@@ -52,10 +50,10 @@ a:active{
 	text-align: center;
 	font-weight: 800;
 }
-.cont{
+legend{
 	margin-bottom: 0.6em;
 	font-size: 1.25em;
-	font-weight: 600;
+	font-weight: 800;
 }
 
 .div-1{
@@ -104,17 +102,21 @@ fieldset{
 	font-weight: 300;
 }
 
-input[placeholder]{
-	/* text-align: right; */
-	font-style: italic;
-	font-weight: 200;
-}
+
 input:focus{
 	font-style: normal;
 	font-weight: 500;
 }
-::-webkit-input-placeholder { text-align:right; }
-input:-moz-placeholder { text-align:right; }
+::-webkit-input-placeholder { 
+	text-align:right; 
+	font-style: italic;
+	font-weight: 200;
+}
+input:-moz-placeholder { 
+	text-align:right; 
+	font-style: italic;
+	font-weight: 200;
+}
 
 
 
@@ -143,25 +145,24 @@ input:-moz-placeholder { text-align:right; }
 	font-weight: 300;
 	font-size: 0.95em;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	margin-top: 0.35em;
 	height: 49.66px;
 	padding: 0 0 0 0.85em;
-	
-	
+    background: url('../arrows.png') no-repeat 99% 45% #EFF0F1;
+    background-size: 49px 43px;
 }
 
 
 
 
 .zip{
-	width: 50%;
+	width: 53%;
 }
 
 
-.newshead{
-	margin-bottom: 0.7em;
-	font-size: 1.2em;
-}
+
 .newsp{
 	margin-bottom: 0.5em;
 	line-height: 1.63em;
@@ -169,48 +170,145 @@ input:-moz-placeholder { text-align:right; }
 	color: grey;
 }
 .newsf{
-	margin-top: 0.8em;
+	margin-top: 0.55em;
 	margin-bottom: 0.3em;
 	color: grey;
 }
 
 
-.check{
-	/* margin: 0 0.6em 1.05em 0.25em; */
-}
-
-input[type="checkbox"]{
-	-webkit-appearance: none;
-	border: 1px solid black;
-	width: 10px;
-	height: 10px;
-}
-input[type="checkbox"]:checked{
-	background-color: red;
+input[name=newsletter]{
+	margin: 0 0 1.9em 0;
 }
 
 
+	
+	
 
+input[type=checkbox] {
+    width: 9px;
+    height: 9px;
+    margin-right: 13px;
+    /* cursor: pointer; */
+    font-size: 9px;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+input[type=checkbox]:after {
+    content: " ";
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 3px;
+    /* padding-bottom:5px; */
+    color:#fff;
+    width: 9px;
+    height: 9px;
+    /* visibility: visible; */
+    border:1px solid #a5a5a5;
+    /* padding-left:3px; */
+    border-radius:2px;
+	
+}
+input[type=checkbox]:checked:after {
+    content: "\2713";
+    background-color: #489EF9;
+    font-weight: 600;
+	font-size: 1em;
+	line-height: 1;
+	border: none;
+	padding: 3px 1px 1px 2px;
+	text-shadow: 0 1px 0 #444;
+	
+}	
+input[type=checkbox]:focus{
+	outline: none;
+}
+
+	
+	
+	
+	
+	
+	
 
 
 
 /* #489EF9 */
 
-.radio{
-	margin-bottom: 1em;
+
+input[type=radio] {
+    width: 12px;
+    height: 12px;
+    margin-right: 13px;
+    /* cursor: pointer; */
+    font-size: 9px;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+input[type=radio]:after {
+    content: " ";
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 3px;
+    /* padding-bottom:5px; */
+    color:#fff;
+    width: 12px;
+    height: 12px;
+    /* visibility: visible; */
+    border:1px solid #a5a5a5;
+    /* padding-left:3px; */
+    border-radius: 50%;
+	/* margin-top: -15px; */
+	
+}
+input[type=radio]:checked:after {
+    content: "\00B7";
+    background-color: #489EF9;
+    font-weight: 600;
+	width: 14px;
+    height: 14px;
+	font-size: 2.75em;
+	line-height: 15px;
+	
+	border: none;
+	text-align: center;
+	/* padding: 3px 0px 1px 0px; */
+	text-shadow: 0 1px 0 #444;
+	
+	
+}	
+input[type=radio]:focus{
+	outline: none;
+}
+
+	
+	
+
+
+
+#format_html{
+	margin-bottom: 1.9em;
 }
 #format_plain{
-	margin-bottom: 2.07em;
+	margin-bottom: 3.07em;
 }
 .oth{
 	font-size: 0.95em;
 	color: grey;
 }
-.other{
+textarea{
 	height: 7.5em;
+	
+	resize: none;
+}
+.other{
 	margin-top: 0.95em;
 	margin-bottom: 1.5em;
-	
 }
 .button{
 	width: 100%;
@@ -228,9 +326,11 @@ footer{
 	text-align: center;
 }
 footer p{
-	padding-top: 1.3em;
-	padding-bottom: 12.5em;
+	padding-top: 1.6em;
+	padding-bottom: 14.1em;
 	color: #9DA3A8;
+	font-style: italic;
+	font-size: 0.9em;
 }
 
 
