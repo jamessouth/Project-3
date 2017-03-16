@@ -4,17 +4,15 @@
 	box-sizing: border-box;
 	font-family: 'Trirong', serif;
 }
-li{
-	list-style: none;
-}
+
 body{
-	/* background: linear-gradient(#2D3945 3.8%, red 5%); */
+	background: linear-gradient(#2D3945 3.8%, red 5%);
 }
 
 .sub-body{
 	padding: 0 1em;
 	background: 
-	/* radial-gradient(circle at top right, yellow -40%, red 1%, #46321a 90%); */
+	linear-gradient(yellow -20%, red 10%, #46321a 90%);
 }
 
 header{
@@ -22,29 +20,6 @@ header{
 	height: 4.4em;
 	margin-bottom: 1.3em;
 	line-height: 4.4em;
-}
-
-a{
-	text-decoration: none;
-	transition: all .5s;
-}
-a:link{
-	color: #4a4a4a;
-}
-
-a:visited{
-	color: red;
-}
-a:hover{
-	text-shadow:0 1px 0 #222,
-				0 -1px 0 #222,
-                0 2px 0 #222,
-                0 3px 0 #222,
-                0 4px 0 #222;
-}
-
-a:active{
-	text-decoration: underline;
 }
 
 .head-title{
@@ -61,7 +36,7 @@ legend{
 
 .div-1{
 	text-align: center;
-	/* background: radial-gradient(circle at bottom, #4EBBB5 -80%, transparent); */
+	background: radial-gradient(circle at bottom, #4EBBB5 -80%, transparent);
 	animation: anim1 2s linear 1 forwards;
 	margin-bottom: 1.25em;
 }
@@ -74,7 +49,6 @@ legend{
 
 .div-1 h2{
 	font-size: 1.25em;
-	/* margin-top: -0.55em; */
 	margin-bottom: 0.25em;
 }
 
@@ -137,7 +111,7 @@ input[name=user_email]::-moz-placeholder {
 	margin-top: 0.5em;
 	margin-bottom: 0.85em;
 	background-color: #EFF0F1;
-	padding: 0.63em 1.6em;
+	padding: 0.63em 1.2875em 0.63em 1.1em;
 	border-radius: 4px;
 	border: 5px solid transparent;
 	transition: background-color 1s;
@@ -164,7 +138,6 @@ input[name=user_email]::-moz-placeholder {
 	font-size: 0.95em;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 	margin-top: 0.35em;
 	height: 49.66px;
 	padding: 0 0 0 0.85em;
@@ -205,7 +178,6 @@ input[type=checkbox] {
     font-size: 9px;
     -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 }
 
 input[type=checkbox]:after {
@@ -240,7 +212,6 @@ input[type=radio] {
     font-size: 9px;
     -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 }
 
 input[type=radio]:after {
@@ -324,43 +295,54 @@ footer p{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: white;
+		background: 
+	linear-gradient(#2D3945 3.88%, #fff 5%, red 7%, #46321a 90%);
 	}
 	header{
 		width: 100%;
 	}
 	.sub-body{
 		width: 50%;
-		
+		padding: 0;
+		background: none;
 	}
 	
 	fieldset:nth-of-type(1){
 		display: flex;
 		flex-direction: column;
 	}
-	fieldset:nth-of-type(1) div{
+	fieldset:nth-of-type(1) div:not(:last-child){
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 0.15em;
 	}
 	
+	fieldset:nth-of-type(1) div:last-child{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 0.15em;
+		
+	}
 	
+	fieldset:nth-of-type(1) div:last-child > input{
+		margin-left: calc(25% - 63.266px);
+	}
+	.zip{
+		width: 25.75%;
+	}
 	
 	fieldset:nth-of-type(1) div > input,
 	fieldset:nth-of-type(1) div > select{
 		max-width: 74.166666666%;
-		/* align-self: flex-end; */
-		
-	}
-	fieldset:nth-of-type(1) > label{
-		
+		margin-right: 5px;
 	}
 	
 	.div-1{
-		margin-top: 2.25em;
+		padding-top: 2.25em;
 		margin-bottom: 2.5em;
 	}
-	
 	
 	.div-1 h2{
 		margin-bottom: 0.08em;
@@ -371,24 +353,15 @@ footer p{
 		margin-bottom: 3.15em;
 	}
 	#third-line{
-		margin-top: 3em;
+		margin-top: 2.25em;
+		margin-bottom: 2.5em;
+	}
+	.newshead{
+		margin-bottom: 0.84em;
+	}
+	footer p{
+		padding-top: 2.4em;
+		padding-bottom: 21.2em;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
-
-
-
