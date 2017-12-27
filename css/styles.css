@@ -4,24 +4,20 @@
 	box-sizing: border-box;
 	font-family: 'Trirong', serif;
 }
-
 body{
 	background: linear-gradient(#2D3945 3.8%, red 5%);
 }
-
 .sub-body{
 	padding: 0 1em;
 	background: 
 	linear-gradient(yellow -20%, red 10%, #46321a 90%);
 }
-
 header{
 	background-color: #2D3945;
 	height: 4.4em;
 	margin-bottom: 1.3em;
 	line-height: 4.4em;
 }
-
 .head-title{
 	color: #fff;
 	text-transform: uppercase;
@@ -33,25 +29,21 @@ legend{
 	font-size: 1.25em;
 	font-weight: 800;
 }
-
 .div-1{
 	text-align: center;
 	background: radial-gradient(circle at bottom, #4EBBB5 -80%, transparent);
 	animation: anim1 2s linear 1 forwards;
 	margin-bottom: 1.25em;
 }
-
 @keyframes anim1{
 	0% {opacity: 0; }
 	10% {opacity: 0; }
 	100% {opacity: 1; }
 }
-
 .div-1 h2{
 	font-size: 1.25em;
 	margin-bottom: 0.25em;
 }
-
 .div-1 p{
 	margin-bottom: 2.5em;
 	line-height: 1.2em;
@@ -62,49 +54,41 @@ hr{
 	background-color: black;
 	border: none;
 }
-
 #top-line{
 	height: 4px;
 	margin-bottom: 3px;
 }
 #second-line{
 	height: 2px;
-	
 }
 #third-line{
 	margin-top: 1.15em;
 	margin-bottom: 1.37em;
 	height: 2px;
 }
-
 fieldset{
 	border: none;
 }
-
 [for]{
 	color: #bfbbbb;
 	font-weight: 300;
 }
-
 input:focus{
 	font-style: normal;
 	font-weight: 500;
 }
-
 input[name=user_full_name]::-webkit-input-placeholder,
 input[name=user_email]::-webkit-input-placeholder { 
 	text-align:right; 
 	font-style: italic;
 	font-weight: 200;
 }
-
 input[name=user_full_name]::-moz-placeholder,
 input[name=user_email]::-moz-placeholder { 
 	text-align:right; 
 	font-style: italic;
 	font-weight: 200;
 }
-
 .boxes,
 .other{
 	width: 100%;
@@ -116,7 +100,6 @@ input[name=user_email]::-moz-placeholder {
 	border: 5px solid transparent;
 	transition: background-color 1s;
 }
-
 .boxes:focus,
 .other:focus{
 	outline: none;
@@ -124,14 +107,12 @@ input[name=user_email]::-moz-placeholder {
 	background-color: #100F0E;
 	animation: anim2 0.8s linear 0.5s 1 forwards
 }
-
 @keyframes anim2{
 	0% {border-color: transparent;}
 	20% {border-color: #000; }
 	40% {border-color: #fff; }
 	100% {border-color: #46698B; }
 }
-
 #state{
 	color: #ABB0B5;
 	font-weight: 300;
@@ -149,12 +130,10 @@ input[name=user_email]::-moz-placeholder {
 	background-color: #100F0E;
 	background: url('../arrows2.png') no-repeat 99% 45% #100F0E;
 }
-
 .zip{
 	width: 53%;
 	display: block;
 }
-
 .newsp{
 	margin-bottom: 0.5em;
 	line-height: 1.63em;
@@ -166,84 +145,75 @@ input[name=user_email]::-moz-placeholder {
 	margin-bottom: 0.3em;
 	color: #bfbbbb;
 }
-
 input[name=newsletter]{
 	margin: 0 0 1.9em 0;
 }
-
+input[type=radio],
 input[type=checkbox] {
-    width: 9px;
-    height: 9px;
     margin-right: 13px;
     font-size: 9px;
     -webkit-appearance: none;
 	-moz-appearance: none;
-	border: none;
-}
-
-input[type=checkbox]:after {
-    content: " ";
-    background-color: #fff;
-    display: inline-block;
-    margin-left: 3px;
-    color:#fff;
-    width: 9px;
-    height: 9px;
-    border:1px solid #a5a5a5;
-    border-radius:2px;
-}
-input[type=checkbox]:checked:after {
-    content: "\2713";
-    background-color: #489EF9;
-    font-weight: 600;
-	font-size: 1em;
-	line-height: 1;
-	border: none;
-	padding: 3px 1px 1px 2px;
-	text-shadow: 0 1px 0 #444;
-}	
-input[type=checkbox]:focus{
-	outline: none;
-}
-
-input[type=radio] {
-    width: 12px;
-    height: 12px;
-    margin-right: 13px;
-    font-size: 9px;
-    -webkit-appearance: none;
-	-moz-appearance: none;
+	appearance: none;
 	border: none;
 	background-color: transparent;
 }
-
-input[type=radio]:after {
+input[type=checkbox] {
+    width: 9px;
+    height: 9px;
+}
+input[type=radio] {
+    width: 12px;
+    height: 12px;
+}
+input[type=radio]:after,
+input[type=checkbox]:after{
     content: " ";
     background-color: #fff;
     display: inline-block;
     margin-left: 3px;
     color:#fff;
+    border:1px solid #a5a5a5;
+}
+input[type=checkbox]:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+}
+input[type=radio]:after {
     width: 12px;
     height: 12px;
-    border:1px solid #a5a5a5;
     border-radius: 50%;
 }
-input[type=radio]:checked:after {
-    content: "\00B7";
+input[type=radio]:checked:after,
+input[type=checkbox]:checked:after{
     background-color: #489EF9;
     font-weight: 600;
+	border: none;
+	text-shadow: 0 1px 0 #444;
+}	
+input[type=checkbox]:checked:after {
+    content: "\2713";
+	font-size: 1em;
+	line-height: 1;
+	padding: 3px 1px 1px 2px;
+}	
+input[type=radio]:checked:after {
+    content: "\00B7";
 	width: 14px;
     height: 14px;
 	font-size: 2.75em;
 	line-height: 15px;
-	border: none;
 	text-align: center;
-	text-shadow: 0 1px 0 #444;
 }	
+input[type=checkbox]:focus,
 input[type=radio]:focus{
 	outline: none;
 }
-
+input[type=checkbox]:focus + label,
+input[type=radio]:focus + label{
+	border: 2px solid #bfbbbb;
+}
 #format_html{
 	margin-bottom: 1.9em;
 }
@@ -272,12 +242,10 @@ textarea{
 	border-radius: 5px;
 	color: #fff;
 }
-
 .button:focus,
 .button:hover{
 	background: linear-gradient(to bottom, #4ebbb5 -50%, #fff 200%);
 }
-
 footer{
 	text-align: center;
 }
@@ -288,12 +256,7 @@ footer p{
 	font-style: italic;
 	font-size: 0.9em;
 }
-
-
-
-
 @media screen and (min-width: 768px) {
-	
 	body{
 		display: flex;
 		flex-direction: column;
@@ -309,7 +272,6 @@ footer p{
 		padding: 0;
 		background: none;
 	}
-	
 	fieldset:nth-of-type(1){
 		display: flex;
 		flex-direction: column;
@@ -320,38 +282,31 @@ footer p{
 		align-items: center;
 		margin-bottom: 0.15em;
 	}
-	
 	fieldset:nth-of-type(1) div:last-child{
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 		margin-bottom: 0.15em;
-		
 	}
-	
 	fieldset:nth-of-type(1) div:last-child > input{
 		margin-left: calc(25% - 63.266px);
 	}
 	.zip{
 		width: 25.75%;
 	}
-	
 	fieldset:nth-of-type(1) div > input,
 	fieldset:nth-of-type(1) div > select{
 		max-width: 74.166666666%;
 		margin-right: 5px;
 	}
-	
 	.div-1{
 		padding-top: 2.25em;
 		margin-bottom: 2.5em;
 	}
-	
 	.div-1 h2{
 		margin-bottom: 0.08em;
 		font-size: 1.6em;
 	}
-	
 	.div-1 p{
 		margin-bottom: 3.15em;
 	}
@@ -366,5 +321,4 @@ footer p{
 		padding-top: 2.4em;
 		padding-bottom: 21.2em;
 	}
-	
 }

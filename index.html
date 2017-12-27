@@ -11,50 +11,37 @@
 	<header>
 		<h3 class="head-title">the code review</h3>
 	</header>
-	
 	<div class="sub-body">
-	
-	
 		<div class="div-1">
 			<h2>Signup for our newsletter</h2>
 			<p>Get the latest news on how your code is doing right in your inbox</p>
 			<hr id="top-line">
 			<hr id="second-line">
-		
 		</div>
-			
-		
 		<div class="div-2">
-			
 			<form action="index.html" method="post">
 				<fieldset>
 					<legend class="cont">Contact Information</legend>
-					
 					<div>
 						<label for="name">Full Name</label>
 						<input pattern="[-a-zA-Z]+ {1}[-a-zA-Z]+" required class="boxes" id="name" type="text" name="user_full_name" placeholder="Required"/>
 					</div>
-					
 					<div>
 						<label for="email">Email Address</label>
 						<input required class="boxes" id="email" type="email" name="user_email" placeholder="Required"/>
 					</div>
-					
 					<div>
 						<label for="phone">Phone Number</label>
 						<input class="boxes" id="phone" type="tel" name="user_phone" placeholder="555-555-5555"/>
 					</div>
-					
 					<div>
 						<label for="address">Street Address</label>
 						<input class="boxes" id="address" type="text" name="user_address" placeholder="123 Main Street"/>
 					</div>
-					
 					<div>
 						<label for="city">City</label>
 						<input class="boxes" id="city" type="text" name="user_city" placeholder="Anytown"/>
 					</div>
-					
 					<div>
 						<label for="state">State</label>
 						<select class="boxes" name="user_state" id="state">
@@ -110,51 +97,37 @@
 							<option value="West Virginia">West Virginia</option>
 							<option value="Wisconsin">Wisconsin</option>
 							<option value="Wyoming">Wyoming</option>
-							
 						</select>
 					</div>
-					
 					<div>
 						<label for="zip">Zip Code</label>
 						<input class="boxes zip" id="zip" type="text" name="user_zip" placeholder="12345"/>
 					</div>
-			
 				</fieldset>
 				<hr id="third-line">
 				<fieldset>
 					<legend class="newshead">Newsletter</legend>
 					<p class="newsp">Select the newsletters you would like to receive</p>
-				
 					<input class="check" type="checkbox" id="html" name="newsletter" value="news_html"/><label for="html">
 					HTML News</label><br>
 					<input class="check" type="checkbox" id="css" name="newsletter" value="news_css"/><label for="css">
 					CSS News</label><br>
 					<input class="check" type="checkbox" id="js" name="newsletter" value="news_js"/><label for="js">
 					Javascript News</label><br>
-				
 					<p class="newsf">Newsletter format</p>
 					<input class="radio" type="radio" id="format_html" name="news_format" value="HTML"/><label for="format_html">
 					HTML</label><br>
 					<input class="radio" type="radio" id="format_plain" name="news_format" value="Plain text"/><label for="format_plain">
 					Plain text</label><br>
-					
 					<label for="ta" class="oth">Other topics you'd like to hear about</label><br>
 					<textarea id="ta" class="other" name="user_other" placeholder="Enter text..."></textarea><br>
-			
-			
 				</fieldset>
-				
 				<button class="button" type="submit">Sign Up</button>
-			
 			</form>
-			
 		</div>
-		
-		
 		<footer>
 			<p>Copyright The Code Review</p>
 		</footer>
-	
 	</div>
   </body>
 </html>
