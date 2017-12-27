@@ -178,6 +178,7 @@ input[type=checkbox] {
     font-size: 9px;
     -webkit-appearance: none;
 	-moz-appearance: none;
+	border: none;
 }
 
 input[type=checkbox]:after {
@@ -212,6 +213,8 @@ input[type=radio] {
     font-size: 9px;
     -webkit-appearance: none;
 	-moz-appearance: none;
+	border: none;
+	background-color: transparent;
 }
 
 input[type=radio]:after {
